@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 id="heading">CALCULATOR....</h1>
+      <div>
+        <input
+          readonly
+          type="text"
+          name=""
+          id="inp"
+          style="
+            height: 80px;
+            width: 260px;
+            background-color: purple;
+            color: white;
+            font-size: larger;
+            border: 5px solid palevioletred;
+            cursor: pointer;"
+             onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+             onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+            /> 
+          
+    
+      </div>
+      <br />
+      <div class="container">
+        <button
+          id="Clearall"
+          style="
+            height: 40px;
+            width: 120px;
+            background-color: purple;
+            color: white;
+            border-radius: 90px;
+            border: 3px solid palevioletred;
+            font-size: larger;
+          "
+          onclick="clr()"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          Clear all
+        </button>
+      </div>
+      <div>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+
+          "
+          onclick="iqra(7)"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          7
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+
+
+          "
+          onclick="iqra(8)"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          8
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra(9)"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          9
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra('+')"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          +
+        </button>
+      </div>
+      <div>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra(4)"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          4
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra(5)"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          5
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra(6)"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          6
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra('-')"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          -
+        </button>
+      </div>
+      <div>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra(1)"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          1
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra(2)"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          2
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra(3)"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          3
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra('/')"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          /
+        </button>
+      </div>
+      <div>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra(0)"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          0
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra('%')"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          %
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="eq()"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          =
+        </button>
+        <button
+          style="
+            color: white;
+            background-color: purple;
+            height: 40px;
+            width: 60px;
+            font-size: larger;
+            border-radius: 20px;
+            border: 3px solid palevioletred;
+            cursor: pointer;
+          "
+          onclick="iqra('*')"
+          onmouseover="this.style.backgroundColor='palevioletred'; this.style.borderColor='purple';"
+          onmouseout="this.style.backgroundColor='purple'; this.style.borderColor='palevioletred';" 
+        >
+          *
+        </button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

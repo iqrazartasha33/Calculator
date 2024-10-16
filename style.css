@@ -1,0 +1,138 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ .main {
+   margin-top: 9%;
+   margin-left: 40%;
+ }
+ 
+ #heading{
+  letter-spacing: 0.1em;
+  text-shadow: 15px 5px 20px aqua;
+  color: purple;
+ }
+ #heading::first-letter {
+   color: palevioletred;
+   font-size: 50px;
+
+ }
+
+ #heading:hover {
+   color: palevioletred;
+   /* font-size: 40px; */
+   cursor: pointer;
+ }
+
+
+ #Clearall:hover {
+   cursor: pointer;
+ }
+
+
+ @media (max-width: 435px) {
+   .main {
+     margin-top: 5%;
+     margin-left: 0;
+     text-align: center;
+   }
+
+   input[type="text"] {
+     width: 90%;
+     height: 60px;
+     font-size: medium;
+   }
+
+   button {
+     width: 22%;
+     height: 50px;
+     font-size: medium;
+     margin: 5px;
+   }
+
+   button.clear-all {
+     width: 48%;
+     height: 50px;
+   }
+
+   h1 {
+     font-size: 1.5rem;
+   }
+ }
+
+ @media (max-width: 480px) {
+   .main {
+     margin-left: 10%;
+   }
+
+   input {
+     width: 100%;
+     height: 60px;
+     font-size: medium;
+   }
+
+   button {
+     width: 22%;
+     height: 50px;
+     font-size: medium;
+     margin: 3px;
+   }
+
+   .container button {
+     width: 48%;
+     height: 50px;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .main {
+     margin-left: 5%;
+   }
+
+   input {
+     width: 90%;
+     height: 60px;
+     font-size: medium;
+   }
+
+   button {
+     width: 22%;
+     height: 50px;
+     font-size: medium;
+     margin: 3px;
+   }
+
+   .container button {
+     width: 48%;
+     height: 50px;
+   }
+
+   h1 {
+     font-size: 1.5rem;
+   }
+ }
+
+ @media (min-width: 768px) and (max-width: 1024px) {
+   .main {
+     margin-left: 20%;
+   }
+
+   input {
+     width: 320px;
+     height: 70px;
+     font-size: large;
+   }
+
+   button {
+     width: 70px;
+     height: 50px;
+     font-size: large;
+   }
+
+   .container button {
+     width: 150px;
+     height: 60px;
+   }
+ }
